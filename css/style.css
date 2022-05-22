@@ -1,0 +1,519 @@
+@font-face {
+    font-family: 'Rage';
+    src: url(../fonts/rage-italic/RAGE.TTF)
+}
+
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.my-100{
+    margin: 100px 0;
+}
+.tab-block{display: none;}
+.desktop-none{display: none;}
+
+/* Navbar */
+nav.navbar{
+    padding: 20px 130px;
+    background-color: transparent;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    padding: 8px 15px;
+    font: 14px 'Manrope', sans-serif;
+    letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .nav-link.nav-btn{
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+    text-shadow: 1px 0 0 #fff;
+}
+.darkHeader{
+    background-color: rgba(0, 0, 0, 85%) !important;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url('../img/hamburger-menu.png');
+}
+
+
+/* Banner Section */
+#carouselBanner .carousel-item{
+    height: 722px;
+}
+#carouselBanner .carousel-item img.banner-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#carouselBanner .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    padding: 0 125px;
+}
+#carouselBanner .carousel-caption p.carousel-quote-text{
+    font: 43px 'Manrope', sans-serif;
+    color: #fff;
+}
+.green-text{
+    font-weight: bold;
+    color: #91D601;
+}
+.white-underline-btn{
+    text-decoration: none;
+    font: 20px 'Manrope', sans-serif;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-top: 50px;
+    display: inline-block;
+}
+.white-underline-btn:hover{
+    color: #91D601;
+    text-decoration: none;
+    border-bottom: 2px solid #91D601;
+}
+.scroll-down-icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 50px;
+}
+
+
+/* About us */
+.about-card {
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+}
+.about-card .card-title{
+    font: 20px 'Manrope', sans-serif;
+    color: #91D601;
+    font-weight: 500;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.about-card .card-text{
+    font: 30px 'Manrope', sans-serif;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+.about-card-body{
+    padding: 0 40px;
+}
+.black-outline-btn{
+    border: 2px solid #000;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+.black-outline-btn:hover{
+    background-color: #91D601;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #91D601;
+}
+
+/* Count Section */
+.count-card{
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+    justify-content: space-between;
+}
+.count-wrap{
+    display: grid;
+    position: relative;
+}
+.count-wrap .count-number{
+    font: 76px 'Manrope', sans-serif;
+    font-weight: 100;
+    color: rgba(75, 75, 75,40%);
+    position: relative;
+}
+.count-wrap .count-number::after{
+    content: ' ';
+    width: 40px;
+    height: 2px;
+    background-color: #91D601;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.count-wrap .count-text{
+    font: 14px 'Manrope', sans-serif;
+    color: #4B4B4B;
+}
+.count-wrap::before{
+    content: ' ';
+    position: absolute;
+    width: 1.5px;
+    height: 85%;
+    background-color: rgba(112, 112, 112, 15%);
+    right: -50%;
+    top: 50%;
+    transform: translateY(-45%);
+}
+.count-wrap:last-child:before{
+    display: none;
+}
+
+
+/* Services Section */
+.service-carousel-wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 130px 100px 130px;
+}
+.service-carousel-wrap .service-carousel-caption{
+    padding: 0 60px;
+}
+.service-carousel-caption-title{
+    font: 38px 'Manrope', sans-serif;
+    font-weight: 500;
+}
+.service-carousel-caption-desc{
+    font: 20px 'Manrope', sans-serif;
+    color: #AAAAAA;
+    margin: 20px 0;
+}
+.service-carousel-caption-list{
+    list-style: none;
+    padding: 0;
+}
+.service-carousel-caption-list li{
+    font: 26px 'Manrope', sans-serif;
+    color: #AAAAAA;
+    margin-bottom: 10px;
+}
+.service-carousel-caption-list li.active{
+    font: 26px 'Manrope', sans-serif;
+    color: #000;
+}
+.carousel-next-prev-wrap{
+    position: relative;
+    margin-top: 40px;
+    margin-left: -5px;
+}
+.carousel-next-prev-wrap .carousel-control-next{
+    left: 50px;
+    right: auto !important;
+}
+.service-carousel-img-wrap {
+    position: relative;
+}
+.service-carousel-img-bottom-content {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 25px 30px;
+    width: 70%;
+}
+.service-carousel-img-bottom-content-title{
+    font: 26px 'Manrope', sans-serif;
+}
+.service-carousel-img-bottom-content-desc{
+    font: 15px 'Manrope', sans-serif;
+}
+.black-btn-rounded{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font: 15px 'Manrope', sans-serif;
+    width: max-content;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+.black-btn-rounded:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000 !important;
+}
+
+
+/* CEO Section */
+.ceo-wrap{
+    position: relative;
+}
+.ceo-content{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.ceo-content h3{
+    font: 18px 'Manrope', sans-serif;
+    color: #91D601;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.ceo-content p{
+    font: 25px 'Manrope', sans-serif;
+    color: #fff;
+}
+.ceo-content author{
+    font: 45px 'Rage', sans-serif;
+    color: #fff;
+    margin-top: 30px;
+    display: block;
+}
+
+
+/* Media Resources */
+.media-section{
+    padding: 0 130px;
+}
+.media-resources-title-next-prev-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.media-resources-title{
+    font: 35px 'Manrope', sans-serif;
+}
+.media-carousel-next-prev-wrap{
+    width: 70px;
+    margin-right: 15px;
+}
+.black-underline-btn{
+    text-decoration: none;
+    font: 15px 'Manrope', sans-serif;
+    color: #000;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+.black-underline-btn:hover{
+    color: #91D601;
+    text-decoration: none;
+    border-bottom: 2px solid #91D601;
+}
+.media-carousel-content{
+    background-color: #F8F8F8;
+    padding: 30px;
+}
+.media-carousel-content h3{
+    font: 20px 'Manrope', sans-serif;
+}
+.media-carousel-content p{
+    font: 15px 'Manrope', sans-serif;
+    margin: 20px 0;
+}
+.media-carousel-img{
+    width: 100%;
+}
+.grid-cols-3{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+
+/* Customer Section */
+.customer-green-wrap{
+    height: 250px;
+    background-color: #258301;
+    padding: 50px 130px;
+}
+.customer-green-wrap h3{
+    font: 35px 'Manrope', sans-serif;
+    color: #fff;
+}
+.customer-date{
+    text-transform: uppercase;
+}
+.customer-desc{
+    margin: 43px 0 35px 0;
+}
+.customer-date, .customer-desc{
+    font: 18px 'Manrope', sans-serif;
+}
+.customer-name{
+    font: 20px 'Manrope', sans-serif;
+}
+.customer-desgination{
+    font: 15px 'Manrope', sans-serif;
+}
+#carouselCustomer{
+    padding: 0px 130px 60px 130px;
+    margin-top: -100px;
+}
+#carouselCustomer .carousel-inner{
+    padding: 15px 0;
+}
+.customer-carousel-card {
+    background: #F8F8F8;
+    padding: 76px 35px 50px;
+    position: relative;
+}
+.customer-carousel-card:hover{
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 20%);
+}
+.customer-profile {
+    display: flex;
+    align-items: center;
+}
+.customer-profile-info {
+    margin-left: 26px;
+}
+.customer-profile-info p{
+    margin-bottom: 5px;
+}
+.customer-card-bg{
+    position: absolute;
+    top: 5px;
+    right: 80px
+}
+.carousel-indicators [data-bs-target]{
+    border: 2px solid #707070;
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+}
+.carousel-indicators .active{
+    background-color: #258301;
+    border: 2px solid #258301;
+}
+
+
+/* Subscribe Section */
+.subscribe-section{
+    background-color: #258301;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 30px;
+    padding: 60px 130px;
+}
+.subscribe-content h3{
+    font: 30px 'Manrope', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+.subscribe-content p{
+    font: 18px 'Manrope', sans-serif;
+    color: #fff;
+    margin-bottom: 0;
+}
+.subscribe-input input.form-control{
+    height: 50px;
+    border-radius: 50px;
+    padding: 8px 70px 8px 30px;
+    font: 16px 'Manrope', sans-serif;   
+}
+.subscribe-input .input-group>.form-control:focus, .subscribe-input .input-group>.form-select:focus{
+    z-index: 2;
+}
+.subscribe-input .btn-outline-secondary{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px !important;
+    padding: 8px 60px;
+    margin-left: -60px !important;
+    font: 16px 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+/* Footer navigations */
+.footer-navigation-section{
+    padding: 46px 130px;
+    background-color: #F4F5F7;
+}
+.grid-cols-5{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 50px;
+}
+ul.footer-nav-wrap{
+    list-style: none;
+    padding: 0;
+}
+ul.footer-nav-wrap li{
+    margin-bottom: 5px;
+}
+ul.footer-nav-wrap li a{
+    font: 14px 'Manrope', sans-serif;
+    color: #505050;
+    text-decoration: none;
+}
+ul.footer-nav-wrap li a:hover{
+    color: #91D601;
+}
+.quick-link-wrap h6, 
+.consulting-services-wrap-wrap h6,
+.about-company-wrap h6, 
+.follow-us-wrap h6 {
+    font: 14px 'Manrope', sans-serif;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.social-grid-cols-3{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+.social-icon{
+    width: 40px;
+    height: 40px;
+    transition: transform .2s;
+}
+.social-icon:hover{
+    transform: scale(1.1);
+}
+
+
+/* Footer Copyright */
+.footer-copyright-section{
+    padding: 16px 130px;
+    background-color: #F4F5F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgba(112, 112, 112, 15%);
+}
+.bottom-footer-links a, .footer-copyright-section p{
+    font: 13px 'Manrope', sans-serif;
+    text-decoration: none;
+    color: #707070;
+    margin-bottom: 0;
+}
+.bottom-footer-links a{
+    margin-right: 10px;
+}
+.bottom-footer-links a:hover{
+    color: #91D601;
+}
