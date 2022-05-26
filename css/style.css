@@ -7,7 +7,8 @@ html,
 body {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    margin: 0;
+    overflow-x: hidden;
 }
 
 *,
@@ -15,7 +16,7 @@ body {
 *::after {
     box-sizing: inherit;
 }
-.my-100{margin: 100px 0;}
+.py-100{padding-top: 100px !important;}
 .tab-block{display: none;}
 .desktop-none{display: none;}
 .w-115p{width: 115%;}
